@@ -11,17 +11,20 @@
     <header>
         <h1>Dinner Party Club</h1>
         <nav>
-            <a href="#about">How it Works</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#sign-up">Sign Up</a>
-            <a href="#">Login</a>
+            <a href="#about" class="nav-link">How it Works</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#sign-up" class="nav-link">Sign Up</a>
+            <a href="#" class="nav-link">Login</a>
         </nav>
     </header>
     <main>
         <section id="intro">
             <div class="splash-image-container">
-                <h1 class="splash-slogan">Do you like dinner parties?</h1>
-                <h1 class="splash-slogan">Join Dinner Party Club!</h1>
+                <div class="splash-slogan-card">
+                    <h1 class="splash-slogan">Do you like dinner parties?</h1>
+                    <h1 class="splash-slogan">Join Dinner Party Club!</h1>
+                    <button class="sign-up-splash-button" href="#sign-up">Sign Up!</button>
+                </div>
             </div>
             <div class="intro-description">
                 <p class="description">Everybody loves dinner parties! Meet new friends and explore new cuisines at the Dinner Party Club!</p>
@@ -30,14 +33,13 @@
                     <li>Do you like to eat?</li>
                     <li>Do you enjoy spending time around a dinner table with friends?</li>
                 </ul>
-                <p>If you answered yes to these questions, then you should definitely join the Dinner Party Club!</p>
+                <p class="description">If you answered yes to these questions, then you should definitely join the Dinner Party Club!</p>
             </div>
         </section>
         <section id="about">
             <h3>How It Works</h3>
-            <p>When you sign up for the Dinner Party Club, we match you with a group of other dinner party enthusiasts based on your location and preferences.</p>
+            <p>When you sign up for the Dinner Party Club, we match you with a group of other dinner party enthusiasts based on your location and preferences.  You can join by yourself, with a significant other, or with a specific group.</p>
             <ul class="preference-list">
-                <li>Join by yourself, with a significant other, or with a specific group</li>
                 <li>Number of members in the Dinner Party</li>
                 <li>Dietary Requirements - allergies, preferences, etc.</li>
                 <li>Are you adventurous? Do you want to try a variety of different cuisines?</li>
@@ -48,28 +50,29 @@
                 <figure class="review-image">
                     <img src="assets/guy-1-headshot.jpg">
                 </figure>
-                <p class="review-text"></p>
+                <p class="review-text">"I just moved to the city, and I wanted to make some friends. I love going to dinner parties, so Dinner Party Club was a great solution!" - John D.</p>
             </div>
             <div class="review-card">
                 <figure class="review-image">
                     <img src="assets/woman-headshot.jpg">
                 </figure>
-                <p class="review-text"></p>
+                <p class="review-text">"I wanted to try different cuisines, without spending a lot of money at restaurants. I have learned so much about different foods through Dinner Party Club!" - Laura M.</p>
             </div>
             <div class="review-card">
                 <figure class="review-image">
                     <img src="assets/guy-2-headshot.jpg">
                 </figure>
-                <p class="review-text"></p>
+                <p class="review-text">"I like having dinner parties! A few of my friends like having dinner parties too, so we started a group through Dinner Party Club, and now we have a great group of old friends and new to have dinner parties!" - Arthur C.</p>
             </div>
         </section>
         <section id="sign-up">
-            <h4>Sounds good to you? Start your sign up here!</h4>
+            <h4>Sounds good to you? Start your sign-up here!</h4>
             <form>
                 <label>Name</label>
                 <input type="text">
                 <label>Email</label>
                 <input type="text">
+                <button class="sign-up-button">Sign Up</button>
             </form>
             <p>We will send you a link in an email.  This link will direct you to a form for entering your preferences.  We will match you with a dinner party once we get your preferences!</p>
         </section>
