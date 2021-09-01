@@ -22,9 +22,10 @@
 :root {
     --text-normal: 1rem;
     --text-sub-heading: 1.5rem;
-    --text-heading: 1.75rem;
+    --text-heading: 2rem;
     --text-subtitle: 2.5rem;
     --text-title: 3rem;
+    --text-caption: 0.75rem;
     --orange: #F88E28;
     --light-orange: #F8B735;
     --teal: #2B898B;
@@ -99,6 +100,10 @@ section {
     background-color: var(--light-orange);
 }
 
+#about {
+    flex-direction: row;
+}
+
 #reviews {
     background: rgb(248,142,40);
     background: -moz-linear-gradient(135deg, rgba(248,142,40,1) 0%, rgba(38,112,79,1) 75%, rgba(36,53,147,1) 100%);
@@ -121,20 +126,77 @@ footer {
 
 /* 3. Typography Styles 
 ================================ */
+h2 {
+    font-size: var(--text-subtitle);
+}
 
+h3 {
+    font-size: var(--text-subheading);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.photo-credit {
+    font-size: var(--text-caption);
+}
 
 
 /* 4. Module Styles 
 ================================ */
 
+/* Header Nav */
+.nav-link {
+    color: var(--navy-blue);
+    margin: 1rem;
+}
+
+.nav-link:active {
+    color: var(--orange);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:visited {
+    color: var(--navy-blue);
+}
+
+
+/* Footer Nav */
+.footer-nav {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li>.footer-link {
+    margin: 1rem;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: var(--light-orange);
+}
+
+.footer-link:visited {
+    color: white;
+}
+
 
 
 /* 5. Component Styles 
 ================================ */
-.nav-link {
-    margin: 1rem;
-}
 
+/* Splash Image Styles */
 .splash-image-container {
     width: 100%;
     height: 80vh;
@@ -184,6 +246,8 @@ footer {
     border: 1px solid var(--green);
 }
 
+/* Intro Section Styles */
+
 .intro-description {
     width: 100%;
     display: flex;
@@ -192,6 +256,61 @@ footer {
     align-items: center;
     padding: 5rem 3rem;
 }
+
+.description {
+    margin: 2rem 0;
+}
+
+.intro-list {
+    list-style: none;
+    text-align: center
+}
+
+.intro-list > li {
+    margin: 1.5rem 0;
+}
+
+/* About Section Styles */
+.about-figure {
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+}
+
+figcaption {
+    align-self: flex-end;
+    background-color: rgba( 255, 255, 255, 0.75 );
+}
+
+figcaption a {
+    color: black;
+}
+
+.about-text-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.about-text, .preference-list {
+    margin: 1.5rem;
+}
+
+.preference-list > li {
+    margin: 1rem;
+}
+
+
 
 
 /* Review Styles */
@@ -207,12 +326,12 @@ footer {
 .review-card {
     width: 45%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background: rgba( 255, 255, 255, 0.50 );
+    background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin: 3rem;
