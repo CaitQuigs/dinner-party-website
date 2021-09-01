@@ -30,7 +30,7 @@
     --light-orange: #F8B735;
     --teal: #2B898B;
     --green: #26704F;
-    --navy-blue: #06216B;
+    --navy-blue:#243593;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -126,12 +126,17 @@ footer {
 
 /* 3. Typography Styles 
 ================================ */
+h1 {
+    color: var(--navy-blue);
+}
+
 h2 {
     font-size: var(--text-subtitle);
 }
 
 h3 {
-    font-size: var(--text-subheading);
+    font-size: var(--text-heading);
+    margin-top: 1.5rem;
 }
 
 a {
@@ -139,8 +144,9 @@ a {
     font-weight: bold;
 }
 
-.photo-credit {
-    font-size: var(--text-caption);
+.reviews-subtitle {
+    font-weight: normal;
+    width: 60%;
 }
 
 
@@ -173,14 +179,16 @@ a {
     justify-content: center;
     align-items: center;
     list-style: none;
+    margin: 1.5rem 0;
 }
 
 li>.footer-link {
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .footer-link {
     color: white;
+    font-weight: normal;
 }
 
 .footer-link:hover {
@@ -211,7 +219,7 @@ li>.footer-link {
 }
 
 .splash-slogan-card {
-    background: rgba( 255, 255, 255, 0.50 );
+    background: rgba( 255, 255, 255, 0.60 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -254,16 +262,19 @@ li>.footer-link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 3rem;
+    padding: 8rem 3rem;
 }
 
 .description {
+    width: 75%;
     margin: 2rem 0;
+    font-size: var(--text-sub-heading);
+    text-align: center;
 }
 
 .intro-list {
     list-style: none;
-    text-align: center
+    text-align: center;
 }
 
 .intro-list > li {
@@ -312,6 +323,11 @@ li>.footer-link {
     justify-content: center;
     align-items: center;
     padding: 3rem 0;
+}
+
+.reviews-title {
+    margin: 3rem 0 1rem 0;
+    text-shadow: 0 3px 9px rgba(255, 255, 255, 0.5);
 }
 
 .review-card {
