@@ -21,8 +21,8 @@
         <section id="intro">
             <div class="splash-image-container">
                 <div class="splash-slogan-card">
-                    <h1 class="splash-slogan">Do you like dinner parties?</h1>
-                    <h1 class="splash-slogan">Join Dinner Party Club!</h1>
+                    <h2 class="splash-slogan">Do you like dinner parties?</h2>
+                    <h2 class="splash-slogan">Join Dinner Party Club!</h2>
                     <button class="sign-up-splash-button" href="#sign-up">Sign Up!</button>
                 </div>
             </div>
@@ -39,11 +39,9 @@
         <section id="about">
             <figure class="about-figure">
                 <img src="assets/dinner-party.jpg" class="about-image" alt="A photo of a place setting at a dinner party in progress">
-                <figcaption><p class="photo-credit">Photo by <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a> on <a href="https://unsplash.com/s/photos/dinner-party?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                </p></figcaption>
             </figure>
             <div class="about-text-block">
-                <h3 class="about-text">How It Works</h3>
+                <h2 class="about-text">How It Works</h2>
                 <p class="about-text">When you sign up for the Dinner Party Club, we match you with a group of other dinner party enthusiasts based on your location and preferences.  You can join by yourself, with a significant other, or with a specific group.</p>
                 <ul class="preference-list">
                     <li>Number of members in the Dinner Party</li>
@@ -75,7 +73,7 @@
             </div>
         </section>
         <section id="sign-up">
-            <h4>Sounds good to you? Start your sign-up here!</h4>
+            <h2>Sounds good to you? Start your sign-up here!</h2>
             <form>
                 <label>Name</label>
                 <input type="text">
@@ -93,8 +91,30 @@
             <li><a href="#reviews" class="footer-link">Reviews</a></li>
             <li><a href="#sign-up" class="footer-link">Sign Up</a></li>
             <li><a href="#" class="footer-link">Login</a></li>
+            <li><a href="#" class="footer-link" id="credits-open">Photo Credits</a></li>
         </ul>
         <p>&copy 2021 Caitlin Quigley</p>
     </footer>
+
+    <!-- Photo Credits Modal -->
+    <div id="credits-modal" class="modal">
+        <div class="modal-content">
+            <h3 class="modal-title">Photo Credits</h3>
+            <p class="modal-description">All of the images used in this website were courtesy of:</p>
+            <ul class="modal-list">
+                <li class="modal-list-item">Landing area background: Photo by Expect Best from Pexel
+                    https://www.pexels.com/photo/wine-glasses-and-wine-bottles-on-top-of-brown-wooden-table-1243337/</li>
+                <li class="modal-list-item">Dinner table: Photo by <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a> on <a href="https://unsplash.com/s/photos/dinner-party?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                <li class="modal-list-item">Dinner table: Photo by <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a> on <a href="https://unsplash.com/s/photos/dinner-party?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </li>
+                <li class="modal-list-item">1st Review Headshot: Photo by <a href="https://unsplash.com/@zahirnamane?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zahir Namane</a> on <a href="https://unsplash.com/s/photos/headshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
+                <li class="modal-list-item">2nd Review Headshot: Photo by <a href="https://unsplash.com/@jtylernix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tyler Nix</a> on <a href="https://unsplash.com/s/photos/headshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
+                <li class="modal-list-item">3rd Review Headshot: Photo by <a href="https://unsplash.com/@evanthewise?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Evan Wise</a> on <a href="https://unsplash.com/s/photos/headshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
+            </ul>
+            <button id="credits-close" class="button">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

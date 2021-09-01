@@ -30,7 +30,7 @@
     --light-orange: #F8B735;
     --teal: #2B898B;
     --green: #26704F;
-    --navy-blue: #242F35;
+    --navy-blue: #06216B;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -67,7 +67,7 @@ header {
     align-items: center;
     width: 100%;
     height: 10vh;
-    z-index: 10;
+    z-index: 3;
     background-color: white;
     position: fixed;
     top: 0;
@@ -284,15 +284,6 @@ li>.footer-link {
     width: 100%;
 }
 
-figcaption {
-    align-self: flex-end;
-    background-color: rgba( 255, 255, 255, 0.75 );
-}
-
-figcaption a {
-    color: black;
-}
-
 .about-text-block {
     width: 50%;
     display: flex;
@@ -350,4 +341,69 @@ figcaption a {
 .review-text {
     width: 40%;
     margin: 2rem;
+}
+
+/* Sign Up Styles */
+.button {
+    color: white;
+    background-color: var(--navy-blue);
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    font-size: var(--text-sub-heading);
+    font-weight: bold;
+    width: 25%;
+    padding: 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.button:hover {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+}
+
+/* Photo Credits Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+    background-color: var(--light-orange);
+    margin: 10% auto;
+    padding: 1.5rem;
+    border: 0.25rem solid var(--navy-blue);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-title {
+    color: var(--navy-blue);
+    font-size: var(--text-heading);
+    margin: 1.5rem;
+}
+
+.modal-description, .modal-list-item {
+    margin: 1rem;
+}
+
+.modal-list-item > a {
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .modal-content {
+        margin: 35% auto;
+    }
 }
