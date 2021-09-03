@@ -93,6 +93,7 @@ main {
 section {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #intro {
@@ -132,6 +133,7 @@ h1 {
 
 h2 {
     font-size: var(--text-subtitle);
+    margin-top: 1.5rem;
 }
 
 h3 {
@@ -312,9 +314,6 @@ li>.footer-link {
     margin: 1rem;
 }
 
-
-
-
 /* Review Styles */
 #reviews {
     width: 100%;
@@ -322,11 +321,11 @@ li>.footer-link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
 }
 
 .reviews-title {
-    margin: 3rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
     text-shadow: 0 3px 9px rgba(255, 255, 255, 0.5);
 }
 
@@ -359,7 +358,85 @@ li>.footer-link {
     margin: 2rem;
 }
 
+.custom-shape-divider-bottom-1630608351 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 3rem;
+}
+
+.custom-shape-divider-bottom-1630608351 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: 113px;
+}
+
+.custom-shape-divider-bottom-1630608351 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1630608351 svg {
+        width: calc(100% + 1.3px);
+        height: 107px;
+    }
+}
+
 /* Sign Up Styles */
+.sign-up-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-title {
+    margin: 2rem 0 1.5rem 0;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0 4rem 0;
+}
+
+.form-label {
+    font-size: var(--text-sub-heading);
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    width: 100%;
+    height: 2rem;
+}
+
+.form-field:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    border: 3px solid var(--teal);
+}
+
 .button {
     color: white;
     background-color: var(--navy-blue);
@@ -374,12 +451,11 @@ li>.footer-link {
 }
 
 .button:hover {
-    background-color: var(--teal);
-    border: 1px solid var(--teal);
+    background-color: darkslategray;
+    border: 1px solid darkslategray;
 }
 
 /* Photo Credits Modal */
-
 .modal {
     display: none;
     position: fixed;
